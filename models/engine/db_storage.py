@@ -3,6 +3,7 @@
 Contains the class DBStorage
 """
 from os import getenv  # Import getenv from the os module
+from models.base_model import Base
 
 
 class DBStorage:
