@@ -2,6 +2,7 @@
 """
 Contains the class DBStorage
 """
+from os import getenv  # Import getenv from the os module
 
 
 class DBStorage:
@@ -11,6 +12,7 @@ class DBStorage:
 
     def __init__(self):
         """Instantiate a DBStorage object"""
+        from sqlalchemy import create_engine  # Import create_engine here
         HBNB_MYSQL_USER = getenv('HBNB_MYSQL_USER')
         HBNB_MYSQL_PWD = getenv('HBNB_MYSQL_PWD')
         HBNB_MYSQL_HOST = getenv('HBNB_MYSQL_HOST')
